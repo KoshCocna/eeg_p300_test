@@ -4,6 +4,7 @@ from PIL import Image
 import random
 import matplotlib.pyplot as plt
 import os
+from pathlib import Path
 
 # ==========================================================
 # Create results folder if not exists
@@ -181,9 +182,19 @@ def plot_p300(eeg_csv, oddball_csv):
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
+
+    # --- P300 peak window highlight (0.2s ~ 0.4s) ---
+    try:
+        plt.axvspan(0.2, 0.4, alpha=0.15, label="P300 Window")
+        plt.legend(loc="best")
+    except Exception:
+        pass
+
+    # --- Save figure to project root folder ---
+    png_path = Path("p300_peak_visualization.png")
+    plt.savefig(png_path, dpi=300, bbox_inches="tight")
+    print(f"P300 visualization saved to: {png_path.resolve()}")
     plt.show()
-
-
 # ==========================================================
 # MAIN PIPELINE
 # ==========================================================
