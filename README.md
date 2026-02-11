@@ -51,10 +51,12 @@ Typical P300 window(0.25–0.45s) 강조 표시
 실행 시 그래프 자동 팝업
 
 📁 자동 생성 파일 (results/ 폴더)
+
 파일명	설명
 oddball.gif	10초 길이 Oddball 시각 자극
 oddball_input.csv	프레임·타임스탬프·oddball 여부 기록
 epoch_p300.csv	Oddball 기반으로 생성된 24채널 Fake EEG 신호
+
 🧠 신호 처리 요약
 
 EEG Sampling: 250 Hz
@@ -75,6 +77,7 @@ ch4	Pz	ch12	C3	ch20	T8
 ch5	C4	ch13	T7	ch21	Oz
 ch6	FC5	ch14	P7	ch22	AF3
 ch7	FC6	ch15	P8	ch23	AF4
+
 📦 의존성
 pip install numpy pandas matplotlib pillow
 
