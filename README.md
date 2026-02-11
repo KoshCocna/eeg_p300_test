@@ -53,6 +53,7 @@ Typical P300 window(0.25–0.45s) 강조 표시
 📁 자동 생성 파일 (results/ 폴더)
 
 파일명	설명
+
 oddball.gif	10초 길이 Oddball 시각 자극
 oddball_input.csv	프레임·타임스탬프·oddball 여부 기록
 epoch_p300.csv	Oddball 기반으로 생성된 24채널 Fake EEG 신호
@@ -69,8 +70,8 @@ Midline(Fz / Pz / Cz) 채널에서 더 강한 P300 생성
 
 🧩 채널 매핑 (총 24채널)
 idx	name	idx	name	idx	name
-ch0	Fp1	ch8	O1	ch16	AFz
-ch1	Fp2	ch9	O2	ch17	Cz
+ch0	Fp1	ch8	  O1	ch16	AFz
+ch1	Fp2	ch9	  O2	ch17	Cz
 ch2	F3	ch10	F7	ch18	T7
 ch3	Fz	ch11	F8	ch19	Fpz
 ch4	Pz	ch12	C3	ch20	T8
